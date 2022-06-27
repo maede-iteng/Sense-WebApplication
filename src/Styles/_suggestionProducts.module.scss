@@ -1,0 +1,117 @@
+@import "config.module";
+.suggestionProducts {
+  margin-top: 2rem;
+  .suggestionProducts__cardWrapper {
+    text-align: center;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: column;
+    grid-row-gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include extra-small{
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      width: 350px;
+      height: 450px;
+      position: relative;
+      background-color: $primary-color;
+      overflow: hidden;
+      transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+      @include box-shadow(5px 1px 15px 0px rgb(46 42 57 / 10%));
+      @include rounded(10px);
+      @include extra-small{
+        width:auto;
+      }
+      @include small{
+        width: 160px;
+        height: 260px;
+      }
+      @include medium{
+        width: 200px;
+        height: 300px;
+      }
+      @include large{
+        width: 250px;
+        height: 350px;
+      }
+
+      &:last-child {
+        width: auto;
+        height: 100%;
+        grid-column: 2 / 4;
+        grid-row: 1 /  3;
+        @include extra-small{
+          grid-column: auto;
+          grid-row: auto;
+        }
+
+        .card__img {
+          width: auto;
+          height: calc(100% - 100px);
+        }
+      }
+
+      .card__img {
+        width: 350px;
+        height: 350px;
+        transition: 0.2s all ease-out;
+        @include extra-small{
+          width: auto;
+        }
+        @include small{
+          width: 160px;
+          height: calc(100% - 100px);
+        }
+        @include medium{
+          width: 200px;
+          height: calc(100% - 100px);
+        }
+        @include large{
+          width: 300px;
+          height: calc(100% - 100px);
+        }
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+          display: block;
+
+        }
+      }
+
+      .card__info {
+        p:first-child {
+          font-weight: 700;
+        }
+      }
+
+      &:hover {
+        transform: scale(1, 1);
+
+        .card__img {
+          height: 100%;
+          opacity: .3;
+          position: absolute
+        }
+
+        .card__info {
+          background: transparent;
+          position: relative;
+          font-weight: 600;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+  }
+}

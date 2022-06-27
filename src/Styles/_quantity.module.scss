@@ -1,0 +1,64 @@
+$block: '.quantity-input';
+$border: 0 solid #dbdbdb;
+$border-radius: 12px;
+$color--primary: #f3f3f3;
+$modifier--text-color: #888;
+@import "config.module";
+
+#{$block} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include extra-small{
+    width: 53%;
+  }
+  @include small{
+    width: 70%;
+  }
+  @include medium{
+    width:50%;
+  }
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.13);
+  border-radius: $border-radius;
+}
+
+#{$block}__modifier,
+#{$block}__screen {
+  user-select: none;
+  outline: none;
+}
+
+#{$block}__modifier {
+  padding: .7rem;
+  width: 2rem;
+  @include extra-small{
+    width: 100%;
+  }
+  font-size: 1.2rem;
+  background: $color--primary;
+  color: $modifier--text-color;
+  border: $border;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(#fff, .6);
+  cursor: pointer;
+  &--left {
+    border-radius: $border-radius 0 0 $border-radius;
+    background-color: #F0F2EA;
+  }
+  &--right {
+    border-radius: 0 $border-radius $border-radius 0;
+    background-color: #F0F2EA;
+  }
+}
+
+#{$block}__screen {
+  width: 4rem;
+  padding: .7rem;
+  font-size: 1.2rem;
+  background-color: #F0F2EA;
+  border: 0;
+  border-top: $border;
+  border-bottom: $border;
+  text-align: center;
+}

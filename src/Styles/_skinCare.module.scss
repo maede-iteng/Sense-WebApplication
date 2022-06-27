@@ -1,0 +1,194 @@
+@import "config.module";
+
+.productsPage{
+  h1{
+    font-size:46px;
+    color:$secondary-color;
+    line-height: 5rem;
+  }
+  p{
+    font-size:18px;
+    color:rgba(0,0,0,.5);
+  }
+  .productsPage__products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    .productsPage__filterByAvailability {
+      color: $secondary-color;
+      .productsPage__selectField{
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        position: relative;
+        width: max-content;
+        span{
+          @include extra-small{
+            font-size: 14px;
+          }
+        }
+        .inputSelector {
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          margin-left: 1rem;
+          &::placeholder {
+            opacity: .8;
+            font-weight: 300;
+          }
+          &:focus{
+            outline: none;
+          }
+        }
+        .arrow {
+          position: absolute;
+          right: 38%;
+          top: 15%;
+          ion-icon {
+            font-size: 15px;
+            opacity: .8;
+          }
+        }
+      }
+      .list {
+        width: 350px;
+        background: $primary-color;
+        position: absolute;
+        right: 12%;
+        display: none;
+        color: rgba(46, 42, 57, .8);
+        z-index:1;
+        @include box-shadow(0 22px 25px -9px rgb(0, 0, 0, 0.2));
+        @include rounded(15px);
+        border: 1px solid rgb(0, 0, 0, 0.1);
+
+        .header {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(46, 42, 57, .3);
+          padding: 1rem;
+          overflow: hidden;
+
+          button {
+            cursor: pointer;
+            border-bottom: 1px solid $secondary-color;
+            overflow: hidden;
+
+            &:hover {
+              border-bottom: 2px solid $secondary-color;
+              padding: 0;
+            }
+          }
+        }
+        .option {
+          display: block;
+          padding: .5rem 1rem;
+
+          input {
+            margin-right: .5rem;
+          }
+        }
+      }
+      .show {
+        display: block;
+      }
+    }
+    .productsPage__filterBySelect {
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+      position: relative;
+      width: max-content;
+      label{
+        margin-right:1rem;
+        color: rgba(46, 42, 57, .8);
+        font-weight: 300;
+        font-size: 15px;
+      }
+      select{
+        background-color: transparent;
+        border:none;
+        color: rgba(46, 42, 57, .7);
+        padding: 1rem;
+        &:focus{
+          outline: none;
+        }
+        option{
+          color: rgba(46, 42, 57, .8);
+          font-size:15px;
+          padding:1rem;
+        }
+      }
+      span{
+        margin-left: 1rem;
+        color: rgba(46, 42, 57, .7);
+      }
+    }
+  }
+  .favoriteProducts__cardWrapper{
+    text-align: center;
+    line-height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-row-gap: 2rem;
+    margin-bottom: 5rem;
+    .card{
+      width:350px;
+      height:450px;
+      //justify-self:end;
+      position: relative;
+      background-color: $primary-color;
+      overflow: hidden;
+      transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+      @include box-shadow(5px 1px 15px 0px rgb(46 42 57 / 10%));
+      @include rounded(10px);
+      &:last-child {
+        width:auto;
+        height: auto;
+        //grid-column: 1 / 3;
+        grid-column: 2 /4;
+        grid-row: 1 / 3;
+        //justify-self:auto;
+        .card__img{
+          width: auto;
+          height: calc(100% - 100px);
+        }
+      }
+      .card__img{
+        width:350px;
+        height: 350px;
+        transition: 0.2s all ease-out;
+        img{
+          width:100%;
+          max-width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+        }
+      }
+      .card__info {
+        p:first-child {
+          font-weight: 700;
+        }
+      }
+      &:hover{
+        transform:scale(1 , 1);
+        .card__img{
+          height: 100%;
+          opacity:.3;
+          position:absolute;
+          -webkit-backface-visibility: hidden;
+        }
+        .card__info{
+          background: transparent;
+          position:relative;
+          font-weight: 600;
+          top:50%;
+          left:50%;
+          transform: translate(-50% , -50%);
+        }
+      }
+    }
+  }
+}

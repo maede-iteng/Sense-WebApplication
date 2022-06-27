@@ -1,0 +1,119 @@
+$background-color:#F0F2EA;
+$primary-color:#FAF7F2;
+$secondary-color: #494949;
+$small-width:750px;
+$medium-width:960px;
+$large-width:1024px;
+$extraLarge-width:1280px;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  //border:1px solid red;
+}
+@mixin extra-small{
+  @media (max-width: #{$small-width - 1px}) {
+    @content;
+  }
+}
+@mixin small{
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+@mixin medium{
+  @media (min-width: #{$medium-width}) {
+    @content;
+  }
+}
+@mixin large{
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+@mixin extra-large{
+  @media (min-width: #{$extraLarge-width}) {
+    @content;
+  }
+}
+
+a{
+  all: unset;
+}
+li{
+  list-style: none;
+}
+button{
+  all:unset;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper{
+  justify-content: space-around;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@mixin transition-ease($transition) {
+  transition: $transition;
+}
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+.container{
+  max-width:100%;
+  padding-right:7rem;
+  padding-left:7rem;
+  @include extra-small{
+    padding-right:3rem;
+    padding-left:3rem;
+  }
+  @include large{
+    padding-right:8rem;
+    padding-left:8rem;
+  };
+  @include extra-large{
+    //padding-right:10rem;
+    //padding-left:10rem;
+    padding-right:10rem;
+    padding-left:10rem;
+  };
+  margin-right: auto;
+  margin-left: auto;
+}

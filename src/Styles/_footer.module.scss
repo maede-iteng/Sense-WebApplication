@@ -1,0 +1,115 @@
+@import "config.module";
+
+.footer{
+  width:100%;
+  background: radial-gradient(rgba(255, 229, 229, 1), rgba(255, 224, 218, 1) 25%, rgba(215, 255, 137, 1) 100%);
+  background-attachment: fixed;
+  .footer__description{
+    text-align: center;
+    h1{
+      color:$secondary-color;
+      font-size:50px;
+      font-weight: 500;
+      padding: 3rem 3rem 1rem 3rem;
+      text-align: center;
+    }
+    p{
+      color:$secondary-color;
+      opacity: .9;
+      font-weight: 300;
+    }
+    .input__wrapper{
+      position: relative;
+      input{
+        width: 350px;
+        padding: 1rem 2rem;
+        @include rounded(10px);
+        background-color: rgba(215, 255, 137, .6);;
+        border:1px solid rgba(0 ,0 ,0,.1);
+        margin-top:2rem;
+        &::placeholder{
+          font-weight: 200;
+        }
+      }
+      button{
+        position: absolute;
+        top:50%;
+        left:60%;
+      }
+    }
+
+  }
+
+  .footer__content{
+    display:flex;
+    justify-content: space-between;
+    @include extra-small{
+      flex-direction: column;
+    }
+    @include small{
+      column-gap: 2rem;
+    }
+    @include medium{
+      column-gap: 0;
+    }
+    margin-top: 3rem;
+    color: $secondary-color;
+    h2{
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .footer__navSection{
+      flex: 1;
+      ul li{
+        a{
+          line-height: 30px;
+          opacity: .9;
+          font-weight: 300;
+          &:hover{
+            border-bottom: 1px solid $secondary-color;
+            opacity: 1;
+          }
+
+        }
+      }
+    }
+    .footer__location{
+      flex:1;
+      p{
+        line-height: 30px;
+        opacity:.9;
+        font-weight: 300;
+      }
+    }
+    .footer__flowerImage{
+      flex:1;
+    }
+    .footer__promiseText{
+      flex:1;
+      p{
+        line-height: 30px;
+        opacity:.9;
+        font-weight: 300;
+      }
+    }
+  }
+  .footer__socialMedia{
+    text-align: center;
+    ul {
+      display: inline-flex;
+    li {
+      padding: 1rem;
+      a{
+      ion-icon {
+        font-size: 20px;
+        color: $secondary-color;
+
+        &:hover {
+          font-size: 22px;
+        }
+      }
+      }
+    }
+    }
+  }
+}

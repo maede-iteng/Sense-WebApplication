@@ -1,0 +1,62 @@
+@import "config.module";
+@import "header.module";
+@import "content.module";
+@import "products.module";
+@import "suggestionProducts.module";
+@import "productCategory.module";
+@import "footer.module";
+@import "skinCare.module";
+@import "blog.module";
+@import "aboutUs.module";
+@import "productDetail.module";
+@import "quantity.module";
+@import "accordion.module";
+@import "shoppingCart.module";
+
+
+@font-face {
+  font-family: Shabnam;
+  font-style:normal;
+  font-weight:normal;
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Shabnam.eot");
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Shabnam.woff") format('woof');
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Shabnam.ttf") format('truetype');
+}
+@font-face {
+  font-family: Shabnam;
+  font-style:normal;
+  font-weight:bold;
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Shabnam-Bold.eot");
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Shabnam-Bold.woff") format('woof');
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Shabnam-Bold.ttf") format('truetype');
+
+}
+@font-face {
+  font-family: Shabnam;
+  font-style:normal;
+  font-weight:normal;
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Farsi-Digits/Shabnam-FD.eot");
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Farsi-Digits/Shabnam-FD.woff") format('woof');
+  src:url("../assets/fonts/shabnam-font-v2.4.0/Farsi-Digits/Shabnam-Light-FD.ttf") format('truetype');
+
+}
+
+
+body{
+  background-color: $background-color;
+  //font-family: 'Karla', sans-serif;
+  font-family: 'Shabnam', sans-serif;
+  overflow-x: hidden;
+  direction: rtl;
+}
+ion-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.loading{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,31 @@
+@import "config.module";
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: $background-color;
+  border-bottom:1px solid #E1E1DB;
+}
+.accordion-title:hover {
+  background-color: $background-color;
+}
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+
+  .accordion-title--modify{
+    display:flex;
+    align-items: center;
+    column-gap: 10px;
+    color:$secondary-color;
+    .MuiSvgIcon-root{
+      color:$secondary-color !important;
+      font-size:1.2rem;
+    }
+  }
+}
+.accordion-content {
+  background-color: $background-color;
+}
