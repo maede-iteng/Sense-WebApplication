@@ -11,18 +11,18 @@
   display: flex;
   //justify-content: space-between;
   //gap:2rem;
-  gap: 1.2rem;
+  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
   .card{
-    width:250px;
+    width:230px;
     &.products{
         @include extra-small{
           width: 200px;
         }
     }
     max-width:100%;
-    height:360px;
+    height:340px;
     position: relative;
     background-color: $primary-color;
     overflow: hidden;
@@ -30,8 +30,8 @@
     @include box-shadow(5px 1px 15px 0px rgb(46 42 57 / 10%));
     @include rounded(10px);
     .card__img{
-      width:250px;
-      height: 250px;
+      width:230px;
+      height: 230px;
       transition: 0.2s all ease-out;
       img{
         width:100%;

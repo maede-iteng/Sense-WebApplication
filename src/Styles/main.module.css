@@ -72,8 +72,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -151,8 +151,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -433,8 +433,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -701,8 +701,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -716,14 +716,14 @@ button {
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  gap: 1.2rem;
+  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 .cardWrapper .card {
-  width: 250px;
+  width: 230px;
   max-width: 100%;
-  height: 360px;
+  height: 340px;
   position: relative;
   background-color: #FAF7F2;
   overflow: hidden;
@@ -741,8 +741,8 @@ button {
   }
 }
 .cardWrapper .card .card__img {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   transition: 0.2s all ease-out;
 }
 .cardWrapper .card .card__img img {
@@ -866,8 +866,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -878,9 +878,10 @@ button {
   text-align: center;
   line-height: 40px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr minmax(auto, 45%);
   grid-auto-flow: column;
   grid-row-gap: 2rem;
+  grid-column-gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -1074,8 +1075,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -1204,8 +1205,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -1397,8 +1398,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -1666,8 +1667,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -1854,8 +1855,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -2179,8 +2180,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -2426,8 +2427,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -2570,8 +2571,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
@@ -2683,8 +2684,8 @@ button {
 }
 @media (min-width: 1280px) {
   .container {
-    padding-right: 10rem;
-    padding-left: 10rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
   }
 }
 
