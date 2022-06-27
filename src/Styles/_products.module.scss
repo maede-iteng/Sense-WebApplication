@@ -9,8 +9,6 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
-  //justify-content: space-between;
-  //gap:2rem;
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
@@ -50,12 +48,9 @@
       }
     }
     .card__img--hover{
-      //height: 250px;
       position: absolute;
-      //top: 0;
       right: 0;
       left: 0;
-      ////bottom: 0;
       object-fit: contain;
       opacity: 0;
       transition: opacity .2s;

@@ -1538,7 +1538,6 @@ button {
 .productsPage .favoriteProducts__cardWrapper .card {
   width: 350px;
   height: 450px;
-  position: relative;
   background-color: #FAF7F2;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);

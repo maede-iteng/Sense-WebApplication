@@ -135,8 +135,6 @@
     .card{
       width:350px;
       height:450px;
-      //justify-self:end;
-      position: relative;
       background-color: $primary-color;
       overflow: hidden;
       transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
@@ -145,10 +143,8 @@
       &:last-child {
         width:auto;
         height: auto;
-        //grid-column: 1 / 3;
         grid-column: 2 /4;
         grid-row: 1 / 3;
-        //justify-self:auto;
         .card__img{
           width: auto;
           height: calc(100% - 100px);

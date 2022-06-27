@@ -109,8 +109,6 @@
   line-height: 44px;
   h1{
     color:$secondary-color;
-    //font-size: 6vh;
-    //width: 807px;
     @include extra-small{
       font-size: 20px;
     }
@@ -152,7 +150,6 @@
     }
     p{
       line-height: 30px;
-      //width: 200px;
       opacity: .8;
       margin-top:.5rem;
     }

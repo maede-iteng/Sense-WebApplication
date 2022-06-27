@@ -20,15 +20,8 @@
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
     @include box-shadow(5px 1px 15px 0px rgb(46 42 57 / 10%));
     @include rounded(10px);
-    //@include medium{
-    //  width: 200px;
-    //}
-    //@include large{
-    //  width: 300px;
-    //}
 
     .card__img {
-      //width: 300px;
       height: 300px;
       transition: 0.2s all ease-out;
       overflow: hidden;

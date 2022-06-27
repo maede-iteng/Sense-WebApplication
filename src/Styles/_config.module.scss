@@ -10,7 +10,6 @@ $extraLarge-width:1280px;
   margin:0;
   padding:0;
   box-sizing: border-box;
-  //border:1px solid red;
 }
 @mixin extra-small{
   @media (max-width: #{$small-width - 1px}) {
@@ -109,8 +108,6 @@ button{
     padding-left:8rem;
   };
   @include extra-large{
-    //padding-right:10rem;
-    //padding-left:10rem;
     padding-right:8rem;
     padding-left:8rem;
   };
