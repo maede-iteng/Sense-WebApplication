@@ -1873,6 +1873,11 @@ button {
   margin: 2rem auto;
   line-height: 26px;
 }
+@media (max-width: 749px) {
+  .aboutUs img {
+    width: 70%;
+  }
+}
 
 .aboutUs__content {
   position: relative;
@@ -1910,7 +1915,6 @@ button {
   border-radius: 10px;
 }
 .aboutUs__content .text {
-  width: calc(100% - 550px);
   height: 490px;
   transform: translate(-2rem);
   align-self: center;
@@ -2013,13 +2017,13 @@ button {
 @media (min-width: 1024px) {
   .aboutUs__content .aboutUs__desc {
     padding: 2rem;
-    width: calc(33% - 10px);
+    width: 70%;
   }
 }
 @media (min-width: 1280px) {
   .aboutUs__content .aboutUs__desc {
     padding: 2rem;
-    width: calc(33% - 20px);
+    width: 70%;
   }
 }
 .aboutUs__content .aboutUs__desc h2 {
