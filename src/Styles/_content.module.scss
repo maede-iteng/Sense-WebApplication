@@ -116,7 +116,7 @@
 }
 .advantageSection{
   display: flex;
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   justify-content: space-between;
   @include extra-small{
@@ -130,8 +130,6 @@
   }
   @include medium{
     display: flex;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
     justify-content: space-between;
   }
 
